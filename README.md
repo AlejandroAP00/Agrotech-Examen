@@ -34,3 +34,14 @@ Este comando iniciará la aplicación en el modo de desarrollo y podrás acceder
 
 ### 3. Especificaciones. 
 El sistema fue desarrollado y probado utilizando Node.js v20.16.0. Asegúrate de tener esta versión de Node.js instalada en tu entorno de desarrollo para evitar posibles problemas de compatibilidad.
+
+
+
+### 4. Inicio de sesión 
+El sistema está conectado con DummyJson, por lo que para poder iniciar sesión, es necesario usar un usuario registrado en el sistema.
+
+Ejemplo de usuario:
+Username: emilys
+Password: emilyspass
+
+Para ver más usuarios se puede accerder a: [Users](https://dummyjson.com/users)
