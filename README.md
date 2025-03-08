@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Instrucciones. 
+Utilizando las API'S de https://dummyjson.com realizar las siguientes pantallas en react:
+ - Hacer login
+ - Lista de productos
+ - Pantalla de Editar o agregar un producto nuevo.  
+ - Mostrar notificaciones de éxito o falla
+ - Enviar liga del proyecto en github
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+No es necesario que agregue datos a ninguna base de datos o servicios, solo que se muestre la informacion y pantalla.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Instrucciones de Instalación y Ejecución
 
-## Expanding the ESLint configuration
+### 1. Instalar las dependencias
+Antes de ejecutar la aplicación, debes instalar todas las dependencias necesarias. Ejecuta el siguiente comando en la raíz del proyecto: 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```console
+  npm install
+```
+Este comando descargará e instalará todas las dependencias definidas en el archivo package.json del proyecto.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+### 2. Ejecutar el servidor de desarrollo
+Una vez que las dependencias estén instaladas, puedes iniciar el servidor de desarrollo. Para hacerlo, ejecuta:
+
+```console
+  npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este comando iniciará la aplicación en el modo de desarrollo y podrás acceder a ella a través de http://localhost:3000 en tu navegador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 3. Especificaciones. 
+El sistema fue desarrollado y probado utilizando Node.js v20.16.0. Asegúrate de tener esta versión de Node.js instalada en tu entorno de desarrollo para evitar posibles problemas de compatibilidad.
